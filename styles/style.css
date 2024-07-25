@@ -23,6 +23,12 @@
     box-sizing: border-box;
   }
   /* shared style */
+  .font-style{
+    font-size: 14px;
+    font-weight: normal;
+    opacity: 50%;
+    color: white;
+  }
   .color-font{
     background-color: rgba(230, 83, 60, 1);
     font-weight: 600;
@@ -41,11 +47,9 @@
 /* nav style */
 header{
     background-color: rgba(17, 17, 17, 0.95);
-    /* background: linear-gradient(180.00deg, rgb(17, 17, 17,1) 0%,rgb(119, 119, 119) 100%); */
     padding: 50px 140px 50px 190px;
     width: 100%;
-   
-    /* margin: 0 auto; */
+    
 
 }
 .gym-title{
@@ -80,7 +84,7 @@ nav > ul > li > a{
     gap: 240px;
     /* margin-top: 97px; */
     justify-content: center;
-   align-items: center;
+    align-items: center;
     
 }
 .club-title{
@@ -101,6 +105,12 @@ nav > ul > li > a{
     border-radius: 42px;
     padding: 16px 46.5px;
     margin-right: 14px;
+}
+.calculate-button{
+    border:none ;
+    border-radius: 42px;
+    padding: 16px 70.5px;
+    
 }
 .download-button{
     background-color:black;
@@ -164,8 +174,316 @@ gap: 8px;
     height: 30px;
     border-radius: 50%;
 }
+/* change habits related style */
+.bg-style{
+    padding-top: 100px;
+    background-color:rgba(17, 17, 17, 1);
+    
+}
+.change-habit{
+    padding-bottom: 100px;
+    text-align: center;
+}
+.habit-title{
+    font-weight:  900;
+    font-size: 3rem;
+    margin-bottom: 14px;
+}
+.habit-subtitle{
+    font-size: 0.9rem;
+    font-weight: normal;
+    opacity: 50%;
+    margin-bottom: 58px;
+}
+.habit{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+    margin-left: 140px;
+    margin-right: 140px;
+     
+}
+.habit img{
+    border-radius: 100%;
+    margin-bottom: 30px;
+}
+.habit h4{
+    font-size:1.12rem;
+    font-weight:  600;
+}
+.habit p{
+    font-size: 0.95rem;
+    font-weight:normal;
+    opacity: 50%;
+}
+/* run related style */
+.run{
+    background-color: rgba(34, 34, 34, 1);
+    margin-left: 150px;
+    margin-right: 150px;
+    border-radius: 18px;
+    margin-bottom: 200px;
+}
+.run-extra-mile{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 300px;
+  
+}
+.run-text h2{
+    font-weight:900;
+    font-size: 48px;
+    margin-bottom: 14px;
+}
+.run-text p{
+    font-size: 14px;
+    font-weight: normal;
+    opacity: 50%;
+    margin-bottom: 34px;
+}
+.run-text{
+    padding:41px 0px 40px 100px;
+}
+.run-imag{
+     
+    padding: 30px 80px 29px 0px;
+}
+.run-imag img{
+    width:400px;
+    height: 312px;
+    border-radius: 18px;
+}
+/* training related style */
+.training{
+    margin-left: 140px;
+    margin-right: 140px;
+    padding-bottom: 58px;
+   
+}
+.training-title{
+    margin-bottom: 14px;
+    font-size: 3rem;
+    font-weight:  900;
+    
+}
+.training-subtitle{
+    margin-bottom: 58px;
+    
+}
+.row-1{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 0px;
+     padding: 0px;
+}
+.row-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    padding: 0px;
+}
+ 
+.img-container img{
+    width: 100%;
+    height: auto;
+   
+}
+.imag1{
+     height: 201px;
+     width: 310px; 
+     background-image: 
+     linear-gradient(to bottom,rgba(6, 255, 210, 0.5),transparent),
+     linear-gradient(to top,rgba(6, 255, 210, 0.5),transparent),
+     url('../images/exercise1.jpg');
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     align-items: center;
+     justify-content: center;
+       
+}
+.imag2{
+     height: 201px;
+     width: 570px;
+     background-image: 
+     linear-gradient(to bottom,rgba(255, 0, 0, 0.3),transparent),
+     linear-gradient(to top,rgba(255, 0, 0, 0.3),transparent),
+     url('../images/exercise2.png');
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     align-items: center;
+     justify-content: center;
+}
+.imag3{
+     height: 201px;
+     width: 350px;
+     background-image: 
+     linear-gradient(to bottom,rgba(0, 0, 0, 0.5) ,transparent),
+     linear-gradient(to top,rgba(0, 0, 0, 0.5) ,transparent),
+     url('../images/exercise3.png');
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     align-items: center;
+     justify-content: center;
+}
+.imag4{
+     height: 201px;
+     width: 475px;
+     background-image: 
+     linear-gradient(to bottom,rgba(0, 0, 0, 0.5) ,transparent),
+     linear-gradient(to top,rgba(0, 0, 0, 0.5) ,transparent),
+     url('../images/exercise4.png');
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     align-items: center;
+     justify-content: center;
+}
+.imag5{
+     height: 201px;
+     width: 358px;
+     background-image: 
+     linear-gradient(to bottom, rgba(66, 255, 0, 0.3),transparent),
+     linear-gradient(to top, rgba(66, 255, 0, 0.3),transparent),
+     url('../images/exercise5.jpg');
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     align-items: center;
+     justify-content: center;
+}
+.imag6{
+    height: 201px;
+    width: 397px;
+     background-image: 
+     linear-gradient(to bottom, rgba(0, 71, 255, 0.3),transparent),
+     linear-gradient(to top,rgba(0, 71, 255, 0.3) ,transparent),
+     url('../images/exercise6.jpg');
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     align-items: center;
+     justify-content: center;
+}
+.imag1 p{
+    position: relative;
+     top: 150px;
+     left: 24px;
+     color: black;
+     font-size: 14px;
+     font-weight: 500;
+}
+.imag2 p{
+    position: relative;
+    top: 25px;
+    right:-31px;
+    font-weight: 500;
+    font-size: 14px;
+}
+.imag3 p{
+    position: relative;
+    top: 150px;
+    left: 24px;
+    font-weight: 500;
+    font-size: 14px;
+}
+.imag4 p{
+    position: relative;
+    top: 33px;
+    left: 300px;
+    font-weight: 500;
+    font-size: 14px;
+}
+.imag5 p{
+    position: relative;
+    top: 150px;
+    left: 24px;
+    font-weight: 500;
+    font-size: 14px;
+     
+}
+.imag6 p{
+    position: relative;
+    top: 150px;
+    left: 24px;
+    font-weight: 500;
+    font-size: 14px;
+   
+}
+/* bmi calculate related style */
+.calculate-text{
+     margin: 88px 384px 150px 384px;
+}
+.calculate-title{
+    font-size: 48px;
+    font-weight:  900;
+    margin-bottom: 14px;
+}
+.calculate-bmi{
+    background-color: rgba(34, 34, 34, 1);
+     width: 100%;
+     height: auto;
+     justify-content: space-around;
+
+}
+.chart-content{
+    font-size: 28px;
+    font-weight:  900;
+}
+.margin-style{
+     margin: 52px 0px 52px 187px;
+
+}
+.input-form-one{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 12px;
+   
+    
+}
+.input-form-one input,.input-form-one select,.input-form-two select{
+    align-items: center;
+    justify-content: center;
+    padding: 12px 40px 12px 20px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+ 
+.input-form-two select{
+    margin-top: 12px;
+    margin-bottom: 34px;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 100%;
+}
+.calculate table{
+    margin: 52px 0px 52px 187px;
+    border-collapse: collapse;
+    width: 310px;
+    height: 216px;
+    
+}
+.chart-two{
+    margin: 52px 190px 52px 175px;
+}
+td,th{
+     border: 2px solid rgba(255, 255, 255, 0.10);
+     text-align: center;
+     padding: 10px;
+}
+.chart-description{
+    margin-top: 14px;
+    margin-bottom: 34px;
+}
+ 
 @media screen and (max-width:576px) {
-    .navbar,.banner{
+    .navbar,.banner,.habit,.run-extra-mile,.calculate-bmi{
         flex-direction: column;
     }
     .btn-secondary{
@@ -203,7 +521,7 @@ gap: 8px;
          display: none;
         
     }
-    .banner{
+    .banner,.run-extra-mile{
         gap: 48px;
     }
     .banner-text{
@@ -259,6 +577,54 @@ gap: 8px;
         width: 30px;
         height: 30px;
         border-radius: 50%;
+    }
+     
+    .run,.training,.calculate-text,.margin-style,.chart-two,.calculate table{
+        margin: 66px 20px;
+    }
+    .run-text{
+        padding: 31px 33px;
+    }
+    .run-imag{
+        padding: 33px;
+    }
+    .run-imag img{
+        width: 100%;
+        height: auto;
+    }
+    .imag1{
+        height: 128px;
+        width: 192px;
+    }
+    .imag2{
+        height: 128px;
+        width: 191px;
+    }
+    .imag4{
+        height: 127px;
+        width:171px ;
+    }
+    .imag5{
+        height: 127px;
+        width: 212px;
+    }
+    .imag3,.imag6{
+        display: none;
+    }
+    .imag1 p,.imag4 p,.imag5 p{
+        
+         top: 100px;
+         left: 20px;
+    }
+    .imag2 p{
+        top: 20px;
+        right: -82px;
+        width: 100px;
+    }
+    .input-form-one input,.input-form-one select,.input-form-two select{
+        
+        width: 100%;
+        height: auto;
     }
 }
  
