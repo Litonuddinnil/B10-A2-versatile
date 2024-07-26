@@ -207,10 +207,13 @@ gap: 8px;
 .habit img{
     border-radius: 100%;
     margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 5px;
 }
 .habit h4{
     font-size:1.12rem;
     font-weight:  600;
+    padding-bottom: 6px;
 }
 .habit p{
     font-size: 0.95rem;
@@ -292,6 +295,13 @@ gap: 8px;
     height: auto;
    
 }
+.imag1,.imag2,.imag3,.imag4,.imag5,.imag6{
+    background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     align-items: center;
+     justify-content: center;
+}
 .imag1{
      height: 201px;
      width: 310px; 
@@ -299,11 +309,6 @@ gap: 8px;
      linear-gradient(to bottom,rgba(6, 255, 210, 0.5),transparent),
      linear-gradient(to top,rgba(6, 255, 210, 0.5),transparent),
      url('../images/exercise1.jpg');
-     background-size: cover;
-     background-position: center;
-     background-repeat: no-repeat;
-     align-items: center;
-     justify-content: center;
        
 }
 .imag2{
@@ -313,11 +318,6 @@ gap: 8px;
      linear-gradient(to bottom,rgba(255, 0, 0, 0.3),transparent),
      linear-gradient(to top,rgba(255, 0, 0, 0.3),transparent),
      url('../images/exercise2.png');
-     background-size: cover;
-     background-position: center;
-     background-repeat: no-repeat;
-     align-items: center;
-     justify-content: center;
 }
 .imag3{
      height: 201px;
@@ -326,11 +326,6 @@ gap: 8px;
      linear-gradient(to bottom,rgba(0, 0, 0, 0.5) ,transparent),
      linear-gradient(to top,rgba(0, 0, 0, 0.5) ,transparent),
      url('../images/exercise3.png');
-     background-size: cover;
-     background-position: center;
-     background-repeat: no-repeat;
-     align-items: center;
-     justify-content: center;
 }
 .imag4{
      height: 201px;
@@ -339,11 +334,6 @@ gap: 8px;
      linear-gradient(to bottom,rgba(0, 0, 0, 0.5) ,transparent),
      linear-gradient(to top,rgba(0, 0, 0, 0.5) ,transparent),
      url('../images/exercise4.png');
-     background-size: cover;
-     background-position: center;
-     background-repeat: no-repeat;
-     align-items: center;
-     justify-content: center;
 }
 .imag5{
      height: 201px;
@@ -352,11 +342,6 @@ gap: 8px;
      linear-gradient(to bottom, rgba(66, 255, 0, 0.3),transparent),
      linear-gradient(to top, rgba(66, 255, 0, 0.3),transparent),
      url('../images/exercise5.jpg');
-     background-size: cover;
-     background-position: center;
-     background-repeat: no-repeat;
-     align-items: center;
-     justify-content: center;
 }
 .imag6{
     height: 201px;
@@ -365,60 +350,40 @@ gap: 8px;
      linear-gradient(to bottom, rgba(0, 71, 255, 0.3),transparent),
      linear-gradient(to top,rgba(0, 71, 255, 0.3) ,transparent),
      url('../images/exercise6.jpg');
-     background-size: cover;
-     background-position: center;
-     background-repeat: no-repeat;
-     align-items: center;
-     justify-content: center;
+}
+.imag1 p,.imag2 p,.imag3 p,.imag4 p,.imag5 p,.imag6 p{
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
 }
 .imag1 p{
-    position: relative;
      top: 150px;
      left: 24px;
      color: black;
-     font-size: 14px;
-     font-weight: 500;
 }
 .imag2 p{
-    position: relative;
     top: 25px;
     right:-31px;
-    font-weight: 500;
-    font-size: 14px;
 }
 .imag3 p{
-    position: relative;
     top: 150px;
     left: 24px;
-    font-weight: 500;
-    font-size: 14px;
 }
 .imag4 p{
-    position: relative;
     top: 33px;
     left: 300px;
-    font-weight: 500;
-    font-size: 14px;
 }
 .imag5 p{
-    position: relative;
     top: 150px;
     left: 24px;
-    font-weight: 500;
-    font-size: 14px;
-     
 }
 .imag6 p{
-    position: relative;
     top: 150px;
     left: 24px;
-    font-weight: 500;
-    font-size: 14px;
-   
 }
 /* bmi calculate related style */
 .calculate-text{
-     margin: 88px 384px 150px 384px;
+     margin: 88px 384px 100px 384px;
 }
 .calculate-title{
     font-size: 48px;
@@ -430,7 +395,6 @@ gap: 8px;
      width: 100%;
      height: auto;
      justify-content: space-around;
-
 }
 .chart-content{
     font-size: 28px;
@@ -438,14 +402,11 @@ gap: 8px;
 }
 .margin-style{
      margin: 52px 0px 52px 187px;
-
 }
 .input-form-one{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 12px;
-   
-    
 }
 .input-form-one input,.input-form-one select,.input-form-two select{
     align-items: center;
@@ -481,9 +442,124 @@ td,th{
     margin-top: 14px;
     margin-bottom: 34px;
 }
- 
+ /* meet our team related style */
+ .team{
+    margin-top: 88px;
+    padding-bottom: 66px;
+ }
+ .team-title{
+    text-align: center;
+    font-size: 3rem;
+    font-weight:  900;
+ }
+ .team-description{
+    text-align: center;
+    margin-top: 14px;
+    margin-bottom: 58px;
+ }
+ .team-img-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-left: 220px;
+    margin-right: 220px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    padding: 20px;
+ }
+.team-imag1,.team-imag2,.team-imag3,.team-imag4,.team-imag5,.team-imag6{
+     width: 327px;
+     height: 272px;
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     border-radius: 18px; 
+}
+.team-imag1{
+    background-image:
+     linear-gradient(to bottom,rgba(0, 0, 0, 0.2),transparent),url('../images/trainer1.png');
+}
+.team-imag2{
+    background-image:
+    linear-gradient(to bottom,rgba(0, 0, 0, 0.2),transparent),url('../images/trainer2.png');
+}
+.team-imag3{
+     background-image:
+     linear-gradient(to bottom,rgba(0, 0, 0, 0.2),transparent),url('../images/trainer3.png');
+}
+.team-imag4{
+     background-image:
+     linear-gradient(to bottom,rgba(0, 0, 0, 0.2),transparent),url('../images/trainer4.png');
+}
+.team-imag5{
+     background-image:
+     linear-gradient(to bottom,rgba(0, 0, 0, 0.2),transparent),url('../images/trainer5.png'); 
+}
+.team-imag6{
+     background-image:
+     linear-gradient(to bottom,rgba(0, 0, 0, 0.2),transparent),url('../images/trainer6.png');
+}
+.tamwork-name{
+    position:relative;
+    width: 150px;
+    top: 215px;
+    left: 24px;
+    color:white;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+/* footer related style */
+footer{
+    background-color:rgba(34, 34, 34, 1);
+     width: 100%;
+     height: auto;
+}
+.footer-container{
+  padding:66px 190px 79px 190px;
+  gap:160px ;
+  align-items: left;
+}
+.footer-container a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    padding-bottom: 20px;
+}
+.footer-container a:hover{
+    color: #E6533C;
+}
+.footer-description{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.95rem;
+    font-weight: normal;
+    padding-top: 20px;
+}
+.footer-content h4{
+    padding-bottom: 20px;
+    font-weight:  900;
+    font-size: 1.5rem;
+}
+.footer-title{
+    font-size: 3.80rem;
+}
+.line{
+    margin-left: 190px;
+    margin-right: 190px;
+    border-color:rgba(255, 255, 255, 0.1);
+}
+.footer-last-topic{
+    text-align: center;
+    padding-top: 36px;
+    padding-bottom: 35px;
+    font-weight: normal;
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.5);
+}
 @media screen and (max-width:576px) {
-    .navbar,.banner,.habit,.run-extra-mile,.calculate-bmi{
+    .navbar,.banner,.habit,.run-extra-mile,.calculate-bmi,.footer-container{
         flex-direction: column;
     }
     .btn-secondary{
@@ -579,11 +655,18 @@ td,th{
         border-radius: 50%;
     }
      
-    .run,.training,.calculate-text,.margin-style,.chart-two,.calculate table{
+    .run,.training,.calculate-text{
         margin: 66px 20px;
+    }
+    .chart-two,.calculate table,.margin-style{
+        margin: 40px 20px;
     }
     .run-text{
         padding: 31px 33px;
+    }
+    .bg-style,.change-habit {
+        padding-top: 0px;
+        padding-bottom:0px;
     }
     .run-imag{
         padding: 33px;
@@ -592,6 +675,7 @@ td,th{
         width: 100%;
         height: auto;
     }
+    /* training related style */
     .imag1{
         height: 128px;
         width: 192px;
@@ -626,5 +710,51 @@ td,th{
         width: 100%;
         height: auto;
     }
+    .input-form-one input{
+        font-size: 1rem;
+        font-weight: normal;
+        color: rgba(255, 255, 255, 0.6);
+    }
+    .input-form-two select,.input-form-one select{
+        color:rgba(255, 255, 255, 0.6);
+        font-weight: normal;
+        font-size: 1rem;
+        
+    }
+    .input-form-two select >option,.input-form-one select >option{
+         color: black;
+    }
+    .team-img-container{
+         grid-template-columns: 1fr;
+         margin-left: 10px;
+         margin-right: 10px;
+         padding: 20px;
+         gap: 20px;
+    }
+    .habit-title,.run-text h2,.training-title,.calculate-title,.team-title{
+        font-size: 2rem;
+        font-weight: 900;
+    }
+    .chart-content{
+        font-size: 1rem;
+        font-weight:  900;
+    }
+    .margin-style{
+        margin-top: 34px;
+        margin-bottom: 23px;
+    }
+    /* footer related responsive */
+    .footer-title{
+        font-size: 3rem;
+    }
+    .footer-container{
+         padding: 20px;
+         gap: 20px;
+    }
+    .line{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
 }
  
