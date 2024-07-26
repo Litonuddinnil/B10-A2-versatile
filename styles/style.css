@@ -408,7 +408,23 @@ gap: 8px;
     grid-template-columns: repeat(2,1fr);
     gap: 12px;
 }
+.input-form-one input{
+    font-size: 1rem;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.6);
+}
+.input-form-two select,.input-form-one select{
+    color:rgba(255, 255, 255, 0.6);
+    font-weight: normal;
+    font-size: 1rem;
+    
+}
+.input-form-two select >option,.input-form-one select >option{
+     color: black;
+}
 .input-form-one input,.input-form-one select,.input-form-two select{
+    width: 100%;
+    height: auto;
     align-items: center;
     justify-content: center;
     padding: 12px 40px 12px 20px;
@@ -705,7 +721,7 @@ footer{
         right: -82px;
         width: 100px;
     }
-    .input-form-one input,.input-form-one select,.input-form-two select{
+    /* .input-form-one input,.input-form-one select,.input-form-two select{
         
         width: 100%;
         height: auto;
@@ -723,7 +739,7 @@ footer{
     }
     .input-form-two select >option,.input-form-one select >option{
          color: black;
-    }
+    } */
     .team-img-container{
          grid-template-columns: 1fr;
          margin-left: 10px;
